@@ -2,18 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-h2{
-    margin: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+h1{
+    color: #fff;
 }
 
 #meuCanvas{
-
     border: 1px solid #333;
     background-image: url(../images/hud-futuristic-display-with-detail-sci-fi-monitor-screen-illustration-for-modern-background-high-technology-user-interface-free-vector.jpg);
-    background-size: contain;
-    margin: 20px;
+    background-size: cover;
+    width: 80%;
+    height: 100vh;
 }
 
+body{
+    overflow: hidden;
+}

@@ -1,8 +1,8 @@
 (function(){
+
 	//variáveis
 	let cnv = document.querySelector("#meuCanvas");
 	let ctx = cnv.getContext("2d");
-	const image = document.getElementById("source");
 	let blk;
 	
 	//Teclas
@@ -26,12 +26,12 @@
 	let blocks = [];
 	
 	//Objetos instanciados com os seguintes parâmetros: posX, posY, Largura, Altura e cor
-	var player1 = new Sprite(50, 700, 50, 50, "#00f");
-	sprites.push(player1);
-	
-	
-	var player2 = new Sprite(1350, 200, 50, 50, "#f00");
+	var player2 = new Sprite(50, 700, 50, 50, "#00f");
 	sprites.push(player2);
+	
+	
+	var player1 = new Sprite(1350, 200, 50, 50, "#f00");
+	sprites.push(player1);
 	
 	
 	let block1 = new Sprite(50, 50, 1000, 100, "#fff");
@@ -202,5 +202,7 @@
 			}
 		}		
 	}
+
+
 	loop();
 }());
