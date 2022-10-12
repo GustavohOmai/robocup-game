@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="./css/style.css">
-<title>Wall-e | Jogo</title>
-</head>
-<body style="background-color: #1d1d1d;">
-	<div id="dano">
-		<tbody></tbody>
-	</div>
 
-		<canvas id="meuCanvas" width="1800" height="900"></canvas>
+  <head>
+    <meta charset="utf-8">
+    <title>Wall-e | Jogo</title>
+    <style>
+      #canvas {
+        border: 1px solid #000;
+      }
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/Favicon.png" type="image/x-icon">
+  </head>
 
-	<script type="text/javascript" src="./js/sprites.js"></script>
-	<script type="text/javascript" src="./js/collide.js"></script>
-	<script type="text/javascript" src="./js/script.js"></script>
+  <body style="background-color: #2c2c2c;">
 
 
-</body>
+<div class="flex">
+  <canvas id="canvas" width="1800" height="900"></canvas>
+  <div class="life">
+    <h1>Vida</h1>
+    <div class="robos">
+      <div class="red"><h2>Red: <span id="redlife"></span></h2>
+        <div id="imgred"></div>
+      </div>
+      <div class="red"><h2>Blue: <span id="bluelife"></span></h2>
+        <div id="imgblue" class="w-100"></div>
+      </div>
+    </div>
+    <h2 id="winner"></h2>
+  </div>
+</div>
+
+
+
+
+
+    <script type="text/javascript" src="./js/quadrado.js"></script>
+    <script type="text/javascript" src="./js/funcoes.js"></script>
+    
+  </body>
+
 </html>
