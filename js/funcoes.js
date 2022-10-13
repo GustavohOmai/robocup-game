@@ -259,6 +259,8 @@
           lifeBlue = 100;
           contador = 0;
           document.querySelector("#winner").textContent = "";
+          var image = document.getElementById('winnerimg');
+          image.src = "";
           break;
       }
     });
@@ -268,11 +270,8 @@
 
     if (contador == 5 && lifeRed > lifeBlue || lifeBlue<1 ) {
       document.querySelector("#winner").textContent = "Red é o Vencedor";
-      // var imgred = document.createElement("img");
-      // imgred.src = "./images/red.png";
-      // var src = document.getElementById("imgred");
-      // src.appendChild(imgred);
-
+      var image = document.getElementById('winnerimg');
+      image.src = "./images/red.png";
     }
     if( lifeBlue<1){
       lifeBlue=0;
@@ -282,6 +281,8 @@
     }
     if (contador == 5 && lifeBlue > lifeRed || lifeRed<1) {
       document.querySelector("#winner").textContent = "Blue é o Vencedor";
+      var image = document.getElementById('winnerimg');
+      image.src = "./images/blue.png";
     }
     if (contador == 5|| lifeBlue<1 || lifeRed<1 ) {
       stop();
